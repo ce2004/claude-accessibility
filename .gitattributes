@@ -1,1 +1,2 @@
-*.cmd text eol=crlf
+# Keep the script byte for byte as written, with Windows line endings.
+*.cmd -text

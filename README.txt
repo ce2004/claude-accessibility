@@ -27,7 +27,7 @@ How to install
 
 The easiest way: press Windows+R, paste this line, and press Enter.
 
-powershell -NoProfile -ExecutionPolicy Bypass -Command "[Net.ServicePointManager]::SecurityProtocol=3072; $f=Join-Path $env:TEMP claude-accessibility.cmd; irm https://raw.githubusercontent.com/ce2004/claude-accessibility/main/claude-accessibility.cmd -OutFile $f; & $f"
+powershell -nop -ep bypass -c "[Net.ServicePointManager]::SecurityProtocol=3072;$f=Join-Path $env:TEMP ca.cmd;irm https://raw.githubusercontent.com/ce2004/claude-accessibility/main/claude-accessibility.cmd -OutFile $f;& $f"
 
 Or download claude-accessibility.cmd from this page and double-click it. Windows may say "Windows protected your PC". Choose More info, then Run anyway.
 
